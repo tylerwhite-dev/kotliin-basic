@@ -3,7 +3,7 @@
  */
 
 plugins {
-    kotlin("jvm") version "1.9.22"  // Kotlin plugin
+    kotlin("jvm") version "2.3.10"  // Kotlin plugin
     application                     // Run plugin
 }
 
@@ -11,7 +11,9 @@ repositories {
     mavenCentral()
 }
 
-dependencies { }
+dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+}
 
 application {
     mainClass.set("MainKt")
